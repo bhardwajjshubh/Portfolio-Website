@@ -62,7 +62,7 @@ const Contact = () => {
         )}
 
         {/* Social icons for small screens */}
-        <div className='flex justify-center space-x-4 mt-8'>
+        <div className='flex flex-col sm:flex-row justify-center space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 mt-8'>
           <a
             href='https://www.linkedin.com/in/bhardwajjshubh/'
             target='_blank'
@@ -91,7 +91,7 @@ const Contact = () => {
             Email
           </a>
           <a
-            href='https://drive.google.com/file/d/1pjc_VmAjvL97lMVo6LsY0Dp3fsDalrzd/view?usp=drivesdk'
+            href='https://drive.google.com/file/d/1qQmkm1UIWjECxr-oPsderg__O7R1sM6p/view?usp=drivesdk'
             target='_blank'
             rel='noopener noreferrer'
             className='text-gray-300 hover:text-white flex items-center'
