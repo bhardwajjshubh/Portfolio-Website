@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { links } from './links';
 
 const Contact = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -64,7 +65,7 @@ const Contact = () => {
         {/* Social icons for small screens */}
         <div className='flex flex-col sm:flex-row justify-center space-x-0 sm:space-x-4 space-y-4 sm:space-y-0 mt-8'>
           <a
-            href='https://www.linkedin.com/in/bhardwajjshubh/'
+            href={links.linkedin}
             target='_blank'
             rel='noopener noreferrer'
             className='text-gray-300 hover:text-white flex items-center'
@@ -73,7 +74,7 @@ const Contact = () => {
             LinkedIn
           </a>
           <a
-            href='https://github.com/bhardwajjshubh'
+            href={links.github}
             target='_blank'
             rel='noopener noreferrer'
             className='text-gray-300 hover:text-white flex items-center'
@@ -82,7 +83,7 @@ const Contact = () => {
             Github
           </a>
           <a
-            href='mailto:shubhambhar99397@gmail.com'
+            href={links.email}
             target='_blank'
             rel='noopener noreferrer'
             className='text-gray-300 hover:text-white flex items-center'
@@ -91,7 +92,7 @@ const Contact = () => {
             Email
           </a>
           <a
-            href='https://drive.google.com/file/d/1qQmkm1UIWjECxr-oPsderg__O7R1sM6p/view?usp=drivesdk'
+            href={links.resume}
             target='_blank'
             rel='noopener noreferrer'
             className='text-gray-300 hover:text-white flex items-center'
